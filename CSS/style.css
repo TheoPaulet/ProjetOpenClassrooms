@@ -288,14 +288,14 @@ section.result{
 
 /* Main */
 
-        section.result main{
+        section.result div.middle{
             display: flex;
             flex-wrap: wrap;   
 
             /* background-color: blueviolet; */
         }
 
-            section.result main > div{
+            section.result div.middle > div{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -354,7 +354,7 @@ section.result{
                 /* background-color: green; */
             }
 
-            section.result article.side main > div{
+            section.result article.side div.middle > div{
                 width: 200px;
                 height: 130px;
 
@@ -400,7 +400,7 @@ section.result{
 
 /* Section :hover */
 
-            section.result main > div:hover{
+            section.result div.middle > div:hover{
                 box-shadow: 5px 5px 5px var(--dark-grey);
             }
         
