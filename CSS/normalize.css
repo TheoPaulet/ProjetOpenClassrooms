@@ -1,0 +1,160 @@
+/* MEDIA QUERIES PHONE UNDER 768px */
+
+                                                                /* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: green; */
+}
+
+header img{
+    margin-left: 30px ;
+
+    padding: 20px;
+
+    /* background-color: red; */
+}
+
+/* Nav */
+
+header nav{
+    gap: 0px;
+
+    border-bottom: 4px solid var(--grey);
+
+    /* background-color: blue; */
+}
+
+    header nav a{
+
+        padding-bottom: 12px;
+
+        width: 200px;
+
+        border-bottom: 4px solid transparent;
+        border-top: 4px solid transparent;
+    }
+
+    header nav a:hover{
+        border-bottom: 4px solid var(--blue);
+        border-top: 4px solid transparent ;
+    }
+
+
+                                                            /* SECTIONS */
+
+/* H2 et p */
+
+section.filtres h2, p{
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+
+    padding-left: 10px ;
+}
+
+section.filtres h2{
+    padding-top: 20px;
+}
+
+section.filtres p{
+    width: auto;
+
+    font-size: 16px;
+}
+
+/* Formulaire */
+
+section.filtres form{
+    padding-left: 16px;
+
+}
+
+section.filtres form input{
+    width: 220px;
+}
+
+section.filtres form button{
+    border-radius: 15px;
+
+    padding: 0px;
+}
+
+section.filtres form button::placeholder{
+    visibility: hidden;
+    
+}
+
+section.filtres form button span
+{
+    display: none;
+}
+
+section.filtres form button .fa-search{
+    display: block;
+    
+
+    background-color: var(--blue);
+    color: white;
+}
+
+/* Filtres de recherche */
+
+div.catégorie h3{
+    display: flex;
+    width: 100%;
+
+    /* background-color: red; */
+}
+
+div.catégorie{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* background-color: green; */
+    
+}
+
+                                            /* SECTIONS HÉBERGEMENT ET POPULAIRES */
+
+/* Les plus populaires */
+
+section.result {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+section.result article.side{
+    border-radius: 0px 0px 0px 0px;
+}
+
+/* Hébérgements */
+
+section.result article.main{
+    background-color: transparent;
+}
+
+                                                    /* SECTION ACTIVITÉS */
+
+
+section.activitiesresult{
+    display: flex;
+    flex-direction: column;
+}
+
+                                                    /* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer.activitiesresult article .activities{
+    width: 100%;
+    height: 20%;
+}

@@ -180,6 +180,10 @@ section.filtres{
             padding-right: 10px ;
         }
 
+        section.filtres form button .fa-search{
+            display: none;
+        }
+
 
 /* 2-Filtres de recherche */
 
@@ -291,8 +295,6 @@ section.result{
         section.result div.middle{
             display: flex;
             flex-wrap: wrap;   
-
-            /* background-color: blueviolet; */
         }
 
             section.result div.middle > div{
@@ -335,10 +337,12 @@ section.result{
 
             .blue-star {
                 color: var(--blue);
+                font-size: 12px;
             }
 
             .grey-star {
-                color: var(--grey);
+                color: var(--dark-grey);
+                font-size: 12px;
             }
 
             section.result .info:hover{
@@ -567,7 +571,6 @@ footer{
 
     display: flex;
     align-items: flex-start;
-    flex: 0 0 auto;
     flex-wrap: wrap;
 
     gap: 250px;
@@ -575,4 +578,16 @@ footer{
 
 footer a:hover{
     color: var(--hover);
+}
+
+footer .bold{
+    font-size: 18px;
+}
+
+p{
+    font-size: 14px;
+}
+
+p.bold{
+    font-size: 16   px;
 }
