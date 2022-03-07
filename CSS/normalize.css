@@ -164,6 +164,18 @@ section.activitiesresult div{
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 768px) {
+    section.activites .content{
+        justify-content: center;
+    }
+    section.activites .column{
+        height: auto;
+    }
+    section.activites .bubble{
+        height: 180px;
+    }
+}
+
                                                     /* FOOTER */
 
 footer{

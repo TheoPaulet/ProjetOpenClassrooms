@@ -367,115 +367,72 @@ section.result{
 
                                                      /* SECTIONS ACTIVITÉS */
 
-section.activitiesresult{
+
+section.activites{
+    padding: 0 var(--distance-body);
+    margin-top: var(--distance-body);
+}
+
+section.activites h2{
+    padding-bottom: 30px;
+}
+
+section.activites .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+
+section.activites .column,
+section.activites .bubble{
+    flex: 1 1 auto;
+    max-width: 400px;
+    width: 300px;
+    min-width: 300px;
+    height: 425px;
+}
+
+section.activites .column .bubble{
+    width: 100%;
+}
+
+section.activites .column{
     display: flex;
     flex-direction: column;
+    gap: 35px;
 }
 
-section.activitiesresult h2{
-    padding: 20px 0 30px var(--distance-body);
-}
-
-section.activitiesresult div{
+section.activites .bubble figure{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px var(--grey);
+}
+
+section.activites .bubble img{
+    flex: 1 1 auto;
+    object-fit: cover;
+    height: 100%;
+}
+
+section.activites .bubble figcaption{
+    flex: none;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
     align-items: center;
-    /* background-color: aqua; */
-
-    }
-
-        section.activitiesresult .activities{
-            width: 300px;
-            height: 425px;
-
-            box-shadow: 4px 4px 4px var(--grey);
-            border-radius: 20px;
-
-            /* background-color: green; */
+    background-color: var(--white);
         }
 
-      section.activitiesresult .activities img{
-          height: 87%;
-          width: 300px ;
+section.activites .bubble.one{
+    flex: 1 0.8 auto;}
 
-          border-radius: 20px 20px 0 0;
-
-          object-fit: cover;
-      }
-
-      section.activitiesresult .activitiescolumn{
-          display: flex;
-          flex-direction: column;
-
-          height: 100%;
-          width: 300px;
-
-          gap: 35px;
-
-          border-radius: 20px;
-
-          /* background-color: rebeccapurple; */
-      }
-
-/* IMAGES */
-
-section.activitiesresult .activitiescolumn img{
-        width: 300px ;
-        border-radius: 20px 20px 0 0;
-        object-fit: cover;
-    }
-
-      section.activitiesresult .activitiescolumn img{
-        height: 72%;
-    }
-
-    section.activitiesresult .activitiescolumn img.Frioul{
-        height: 63%;
-    }
-
-    section.activitiesresult .activitiescolumn img.notredame{
-        height: 69%;
-    }
-
-    section.activitiesresult .activitiescolumn img.longchamp{
-        height: 72%;
-    }
-
-/* INFOS */
-
-    section.activitiesresult .infoact{
-        padding: 20px 20px;
-    }
-
-
-/* COLUMNS */
-
-    section.activitiesresult .column1, .column2, .column3, .column4{
-        width: 300px;
-
-        border-radius: 20px;
-        box-shadow: 4px 4px 4px var(--grey);
-    }
-      
-    section.activitiesresult .column1{
-        height: 230px;
-    }
-
-    section.activitiesresult .column2{
-        height: 160px;
-    }
-
-    section.activitiesresult .column3{
-        height: 185px;
-    }
-
-    section.activitiesresult .column4{
-        height: 205px;
-    }
-
-    section.activitiesresult a:hover{
-        color: var(--hover);
-    }
+section.activites .bubble.two{
+    flex: 1 1.1 auto;}
 
 
                                             /* Pied-de-page */
