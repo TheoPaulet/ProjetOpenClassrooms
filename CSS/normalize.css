@@ -2,26 +2,39 @@
 
                                                                 /* HEADER */
 
+body{
+    min-width: 500px;
+    
+}
+
 header{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    padding: 0px;
 
     /* background-color: green; */
 }
 
 header img{
-    margin-left: 30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    width: 140px;
+
+    margin: auto;
     padding: 20px;
 
-    /* background-color: red; */
+    /* background-color: aqua; */
 }
 
 /* Nav */
 
 header nav{
+    display: flex;
+    justify-content: space-around;
+
     gap: 0px;
 
     border-bottom: 4px solid var(--grey);
@@ -30,13 +43,12 @@ header nav{
 }
 
     header nav a{
-
         padding-bottom: 12px;
-
-        width: 200px;
-
+    
         border-bottom: 4px solid transparent;
         border-top: 4px solid transparent;
+
+        /* background-color: red; */
     }
 
     header nav a:hover{
@@ -47,17 +59,9 @@ header nav{
 
                                                             /* SECTIONS */
 
-/* H2 et p */
+/* H1 et p */
 
-section.filtres h2, p{
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
-
-    padding-left: 10px ;
-}
-
-section.filtres h2{
+section.filtres h1{
     padding-top: 20px;
 }
 
@@ -67,15 +71,16 @@ section.filtres p{
     font-size: 16px;
 }
 
-/* Formulaire */
+/* Filtres de recherche */
 
-section.filtres form{
-    padding-left: 16px;
-
+section.filtres .categorie{
+    width: auto;
 }
 
+/* Formulaire */
+
 section.filtres form input{
-    width: 220px;
+    width: 76%;
 }
 
 section.filtres form button{
@@ -104,16 +109,16 @@ section.filtres form button .fa-search{
 
 /* Filtres de recherche */
 
-div.catégorie h3{
+div.categorie h3{
     display: flex;
     width: 100%;
 
     /* background-color: red; */
 }
 
-div.catégorie{
-    display: flex;
+div.categorie{
     flex-wrap: wrap;
+    width: 100%;
 
     /* background-color: green; */
     
@@ -126,16 +131,24 @@ div.catégorie{
 section.result {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
+    
+    padding: 0px;
 }
 
-section.result article.side{
+section.result div.side{
     border-radius: 0px 0px 0px 0px;
+
+    width: 100%;
+}
+
+section.result div.side h2{
+    display: flex;
+    justify-content: center;
 }
 
 /* Hébérgements */
 
-section.result article.main{
+section.result div.main{
     background-color: transparent;
 }
 
@@ -147,14 +160,20 @@ section.activitiesresult{
     flex-direction: column;
 }
 
+section.activitiesresult div{
+    flex-wrap: wrap;
+}
+
                                                     /* FOOTER */
 
 footer{
     display: flex;
     flex-direction: column;
+
+    gap: 40px;
 }
 
-footer.activitiesresult article .activities{
+footer.activitiesresult div .activities{
     width: 100%;
     height: 20%;
 }
