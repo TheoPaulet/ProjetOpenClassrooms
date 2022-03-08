@@ -130,22 +130,21 @@ section.filtres form i{
 }
 
 section.filtres form input{
-            border-top: 1px solid var(--grey) ;
-            border-bottom: 1px solid var(--grey);
-            padding-left: 10px;
-        }
+    border-top: 1px solid var(--grey) ;
+    border-bottom: 1px solid var(--grey);
+    padding-left: 10px;
+}
 
-        section.filtres form button{
-            background-color: var(--blue);
-            color: white;
-            border-radius: 0 15px 15px 0;
+section.filtres form button{
+    background-color: var(--blue);
+    color: white;
+    border-radius: 0 15px 15px 0;
+    padding: 0 10px 0 10px ;
+}
 
-            padding: 0 10px 0 10px ;
-        }
-
-        section.filtres form button .fa-search{
-            display: none;
-        }
+section.filtres form button .fa-search{
+    display: none;
+    }
 
 /* 2-Filtres de recherche */
 
@@ -159,35 +158,31 @@ section.filtres .categorie{
     margin: 10px;
 }
 
-    section.filtres .cat{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+section.filtres .cat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-right: 12px;
+    border: 2px solid var(--grey);
+    border-radius: 25px;
+}
 
-        gap: 10px;
-        padding-right: 12px;
+section.filtres .cat i{
+    background-color: var(--light-blue);
+    color: var(--blue);
+    padding: 12px;
+    margin-left: -2px;
+    border-radius: 50%;
+}
 
-        border: 2px solid var(--grey);
-        border-radius: 25px;
-    }
+section.filtres .categorie a{
+    font-weight: var(--bold);
+}
 
-        section.filtres .cat i{
-            background-color: var(--light-blue);
-            color: var(--blue);
-
-            padding: 12px;
-            margin-left: -2px;
-
-            border-radius: 50%;
-        }
-
-        section.filtres .categorie a{
-            font-weight: var(--bold);
-        }
-
-        section.filtres .categorie a:hover{
-            color: var(--hover);
-        }
+section.filtres .categorie a:hover{
+    color: var(--hover);
+}
 
 /* 3-Texte informatif */
 
@@ -201,19 +196,16 @@ section.filtres .informatif{
 }
 
     section.filtres .informatif i{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        color: var(--blue);
-        font-weight: var(--bold);
-        
-        width: 24px;
-        height: 24px;
-
-        border: 1px solid var(--grey);
-        border-radius: 100%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    font-weight: var(--bold);
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--grey);
+    border-radius: 100%;
+}
 
                                         /* SECTIONS HÉBERGEMENTS ET POPULAIRES */
 
@@ -229,141 +221,126 @@ section.result{
     margin-top: 25px;
 }
 
-    section.result .main, .side{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        flex: 1 1 auto;
-
-        padding: 35px;
-        border-radius: 20px;
-
-        background-color: var(--grey);
-    }
+section.result .main, .side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 auto;
+    padding: 35px;
+    border-radius: 20px;
+    background-color: var(--grey);
+}
 
 
 /* Main */
 
-        section.result div.middle{
-            display: flex;
-            flex-wrap: wrap;   
-        }
+section.result div.middle{
+    display: flex;
+    flex-wrap: wrap;   
+}
 
-            section.result div.middle > div{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                flex: 1 0 auto;
+section.result div.middle > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px var(--dark-grey);
+    margin: 15px;
+    background-color: white;
+}
 
-                width: 200px;
-
-                border-radius: 20px;
-                box-shadow: 2px 2px 2px var(--dark-grey);
-
-                margin: 15px;
-
-                background-color: white;
-            }
-
-            section.result div.main .cadre{
-                width: 100%;
-                height: 110px ;
-
-                border: 5px solid white;
-                border-radius: 20px 20px 0 0;
-            }
+section.result div.main .cadre{
+    width: 100%;
+    height: 110px ;
+    border: 5px solid white;
+    border-radius: 20px 20px 0 0;
+}
 
 
-            section.result .info{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+section.result .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 8px 15px;
+    font-size: 16px;
+}
 
-                width: 100%;
-                height: 80px;
+.blue-star {
+    color: var(--blue);
+    font-size: 12px;
+}
 
-                padding: 8px 15px;
+.grey-star {
+    color: var(--dark-grey);
+    font-size: 12px;
+}
 
-                font-size: 16px;
-            }
-
-            .blue-star {
-                color: var(--blue);
-                font-size: 12px;
-            }
-
-            .grey-star {
-                color: var(--dark-grey);
-                font-size: 12px;
-            }
-
-            section.result .info:hover{
-                color: var(--hover) ;
-            }
+section.result .info:hover{
+    color: var(--hover) ;
+}
 /* Side */
 
-            section.result div.side{
-                width: 450px;
-                flex: none;
-            }
+section.result div.side{
+    width: 450px;
+    flex: none;
+}
 
-            section.result div.side div.middle > div{
-                width: 200px;
-                height: 130px;
-            }
+section.result div.side div.middle > div{
+    width: 200px;
+    height: 130px;
+}
 
-            section.result .infopop{
-                display: flex;
-                flex-direction: column;
+section.result .infopop{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px 15px;
+}
 
-                gap: 10px;
-                padding: 8px 15px;
-            }
+section.result .infopop i{
+    padding-top: 30px;
+}
 
-            section.result .infopop i{
-                padding-top: 30px;
-            }
+section.result div.side img{
+    border-radius: 10px 0 0 10px;
+    float: left;
+    height: 130px;
+    width: 120px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 20px 0 0 20px;
+}
 
-            section.result div.side img{
-              border-radius: 10px 0 0 10px;
+section.result div.side div.populaire{
+    display: inline-block;
+}
 
-              float: left;
-
-              height: 130px;
-              width: 120px;
-              object-fit: cover;
-
-              border: 5px solid white;
-              border-radius: 20px 0 0 20px;
-            }
-
-            section.result div.side div.populaire{
-              display: inline-block;
-            }
-
-            section.result div.side h2 i{
-                padding-left: 140px;
-            }
+section.result div.side h2 i{
+    padding-left: 140px;
+}
 
 /* Section :hover */
 
-            section.result div.middle > div:hover{
-                box-shadow: 5px 5px 5px var(--dark-grey);
-            }
+section.result div.middle > div:hover{
+    box-shadow: 5px 5px 5px var(--dark-grey);
+}
         
-            section.result div.main a{
-                font-weight: var(--bold);
-                font-size: 18px;
-            }
+section.result div.main a{
+    font-weight: var(--bold);
+    font-size: 18px;
+}
 
-            section.result div.main a:hover{
-                color: var(--hover);
-            }
+section.result div.main a:hover{
+    color: var(--hover);
+}
 
-            section.result div.side a:hover{
-                color: var(--hover);
-            }
+section.result div.side a:hover{
+    color: var(--hover);
+}
 
                                                      /* SECTIONS ACTIVITÉS */
 
@@ -473,3 +450,172 @@ p{
 p.bold{
     font-size: 16px;
 }
+
+
+                                                            /* MEDIA QUERIES */
+
+/* MEDIA QUERIES PHONE UNDER 768px */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+                                                                /* HEADER */
+
+body{
+    min-width: 500px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+header img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Nav */
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;
+    border-bottom: 4px solid var(--grey);
+}
+
+header nav a{
+    padding-bottom: 12px;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+}
+header nav a:hover{
+    border-bottom: 4px solid var(--blue);
+    border-top: 4px solid transparent ;
+}
+
+
+                                                            /* SECTIONS */
+
+/* H1 et p */
+
+section.filtres h1{
+    padding-top: 20px;
+}
+
+section.filtres p{
+    width: auto;
+    font-size: 16px;
+}
+
+/* Filtres de recherche */
+
+section.filtres .categorie{
+    width: auto;
+}
+
+/* Formulaire */
+
+section.filtres form input{
+    width: 76%;
+}
+
+section.filtres form button{
+    border-radius: 15px;
+    padding: 0px;
+}
+
+section.filtres form button::placeholder{
+    visibility: hidden;
+}
+
+section.filtres form button span{
+    display: none;
+}
+
+section.filtres form button .fa-search{
+    display: block;
+    background-color: var(--blue);
+    color: white;
+}
+
+/* Filtres de recherche */
+
+div.categorie h3{
+    display: flex;
+    width: 100%;
+}
+
+div.categorie{
+    flex-wrap: wrap;
+    width: 100%;  
+}
+
+                                            /* SECTIONS HÉBERGEMENT ET POPULAIRES */
+
+/* Les plus populaires */
+
+section.result {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+}
+
+section.result div.side{
+    border-radius: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+section.result div.side h2{
+    display: flex;
+    justify-content: center;
+}
+
+/* Hébérgements */
+
+section.result div.main{
+    background-color: transparent;
+}
+
+                                                    /* SECTION ACTIVITÉS */
+
+
+section.activitiesresult{
+    display: flex;
+    flex-direction: column;
+}
+
+section.activitiesresult div{
+    flex-wrap: wrap;
+}
+
+section.activites .content{
+    justify-content: center;
+}
+
+section.activites .column{
+    height: auto;
+}
+
+section.activites .bubble{
+        height: 180px;
+}
+
+
+                                                    /* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+footer.activitiesresult div .activities{
+    width: 100%;
+    height: 20%;
+}
+    }
