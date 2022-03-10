@@ -732,33 +732,36 @@ footer{
 
 @media screen and (min-width: 993px) and (max-width: 1359px) {
 
-    section.result{
-        display: flex;
-        flex-direction: column-reverse;
-        /* justify-content: center; */
-        align-items: center;
-    }
-
-    section.result div.side {
-        width: auto;  
-    }
-
-    section.result div.side .middle{
-        flex-direction: row;
-        width: 1000px;
-        gap: 20px;
-    }
-
-    section.result div.main{
-        background-color: transparent;
-        width: 900px;
-    }
-
-    section.result div.side h2{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-    }
-    
-    
+section.result{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0px;
 }
+
+section.result div.side {
+    width: auto;  
+    background-color: transparent;
+}
+
+section.result div.side .middle{
+    flex-direction: row;
+    width: 1000px;
+    gap: 20px;
+}
+
+section.result div.main{
+    width: 900px;
+}
+
+section.result div.side h2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+footer{
+    gap: 120px;
+    width: auto;
+}   
+    }
